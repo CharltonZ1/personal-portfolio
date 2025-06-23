@@ -1,0 +1,81 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 5px;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.projects {
+    width: 20%;
+}
+
+.experience {
+    width: 40%;
+}
+
+.education {
+    width: 30%;
+}
+
+.reviews {
+    display: flex; 
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .background-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects, .experience, .education {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
